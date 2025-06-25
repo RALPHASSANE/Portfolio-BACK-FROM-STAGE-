@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Bourgoin Ralph</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <nav>
+    <ul>
+      <li><a href="#accueil">Accueil</a></li>
+      <li><a href="#parcours">Parcours</a></li>
+      <li><a href="#competences">Compétences</a></li>
+      <li><a href="#projets">Projets</a></li>
+      <li><a href="#veille">Veille</a></li>
+      <li><a href="#entreprise">Entreprise</a></li>
+      <li><a href="#synthese">Tableau de synthèse</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="accueil" class="hero">
+  <div class="content" data-aos="fade-up">
+    <h1>Bienvenue sur mon Portfolio</h1>
+    <p>Bourgoin Ralph - Étudiant en BTS SIO option SLAM</p>
+   
+  </div>
+</section>
+
+<section id="parcours" class="timeline-section" data-aos="fade-up">
+  <h2>Mon Parcours</h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <h3>2024 - 2025 : BTS SIO SLAM à l'IPSSI</h3>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <h3>2023 - 2024 : Stage Télévendeur</h3>
+        <p>Prospection téléphonique, mailing dans une entreprise de spiritueux.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <h3>2023 - 2024 : BTS NDRC - Aurlom</h3>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <h3>2022 - 2023 : Employé polyvalent - Uniqlo</h3>
+        <p>Aménagement des rayons, gestion des stocks, animation commerciale.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <h3>2022 : Baccalauréat</h3>
+        <p>Lycée Henri Bergson - Baccalauréat technologique.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="competences" class="skills-section" data-aos="fade-up">
+  <h2>Compétences Clés</h2>
+  <div class="skills-grid">
+    <div class="skill-card" onclick="showDescription('htmlcss')">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5/CSS3">
+      <p>HTML5 / CSS3</p>
+    </div>
+    <div class="skill-card" onclick="showDescription('javascript')">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+      <p>JavaScript</p>
+    </div>
+    <div class="skill-card" onclick="showDescription('mysql')">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+      <p>MySQL</p>
+    </div>
+    <div class="skill-card" onclick="showDescription('trello')">
+      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968875.png" alt="Trello/Todoist">
+      <p>Trello & Todoist</p>
+    </div>
+  </div>
+  <div class="skill-description" id="skill-description">
+    <h3 id="desc-title">Clique sur une compétence</h3>
+    <p id="desc-text">Une description s’affichera ici.</p>
+  </div>
+</section>
+
+<section id="projets" class="projects-section" data-aos="fade-up">
+  <h2>Projets Réalisés</h2>
+  <div class="projects-grid">
+    <div class="project-card">
+      <h3>Application de gestion de bibliothèque</h3>
+      <p>Projet en PHP orienté objet utilisant l'API Google Books et MySQL.</p>
+      <ul>
+        <li>Technos : HTML, CSS, JS, PHP POO, MySQL</li>
+      </ul>
+      <a href="#" class="btn">Voir le projet</a>
+    </div>
+    <div class="project-card">
+      <h3>Site personnel</h3>
+      <p>Site vitrine sur mes préférences musicales et univers créatif.</p>
+      <ul>
+        <li>Technos : HTML, CSS</li>
+      </ul>
+      <a href="https://ralphassane.github.io/SLAYERCORP/" class="btn">Voir ce site</a>
+    </div>
+    <div class="project-card">
+      <h3>Site vitrine Sialou Market</h3>
+      <p>Site présentant les produits d'une entreprise locale (stage).</p>
+      <ul>
+        <li>Technos : HTML, CSS, JS</li>
+      </ul>
+      <a href="https://ralphassane.github.io/sialoumarket/" class="btn">Voir ce site</a>
+    </div>
+  </div>
+</section>
+
+<section id="veille" class="veille-section" data-aos="fade-up">
+  <h2>Veille Technologique</h2>
+  <article class="veille-block">
+    <h3>IA dans la création de scénarios et montage cinématographique</h3>
+    <p class="intro">
+      L'IA transforme le secteur du cinéma en intervenant dans l'écriture de scénarios, le montage, et la prévisualisation.
+    </p>
+    <h4>I. Écriture de scénarios</h4>
+    <ul>
+      <li><strong>ScriptBook</strong> : analyse prédictive.</li>
+      <li><strong>Dramatron</strong> : génération de contenu narratif.</li>
+      <li><strong>Sunspring</strong> : court-métrage écrit par une IA.</li>
+    </ul>
+    <h4>II. Montage automatisé</h4>
+    <ul>
+      <li><strong>Adobe Sensei</strong>, <strong>Magisto</strong></li>
+    </ul>
+    <blockquote>L'IA amplifie la créativité humaine sans la remplacer.</blockquote>
+    <p class="sources"><strong>Sources</strong> : Adobe, DeepMind, Vimeo, etc.</p>
+  </article>
+</section>
+
+<section id="entreprise" class="entreprises-section" data-aos="fade-up">
+  <h2>Présentation des Entreprises</h2>
+  <div class="entreprise-card">
+    <h3>Sialou Market</h3>
+    <p><strong>Secteur :</strong> Alimentation</p>
+    <p><strong>Taille :</strong> TPE - 4 salariés</p>
+    <p><strong>Portée :</strong> Locale</p>
+    <p><strong>Mission :</strong> Création d’un site vitrine</p>
+  </div>
+  <div class="entreprise-card">
+    <h3>MezVodka</h3>
+    <p><strong>Secteur :</strong> Restauration / Spiritueux</p>
+    <p><strong>Taille :</strong> TPE - 9 salariés</p>
+    <p><strong>Portée :</strong> Nationale</p>
+    <p><strong>Mission :</strong> Téléprospection, mailing</p>
+  </div>
+</section>
+
+<section id="synthese" class="synthese-section" data-aos="fade-up">
+  <h2>Tableau de Synthèse</h2>
+  <p>
+    Vous pouvez consulter mon tableau de synthèse des compétences en lien avec les activités réalisées cette année en cliquant ci-dessous :
+  </p>
+  <a href="/ASSET/THE Tableau de synthese _BOURGOIN RALPH_  - Tableau de synthèse Épreuve E5.pdf" target="_blank" class="btn-download">
+    Voir le tableau de synthèse (PDF)
+  </a>
+</section>
+
+<footer>
+  <p>&copy; 2025 - Bourgoin Ralph | BTS SIO SLAM</p>
+  <p><a href="mailto:ralph@example.com">bourgoinralph4@gmail.com</a> | <a href="https://github.com/ralphassane" target="_blank">GitHub</a></p>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+<script src="js/script.js"></script>
+</body>
+</html>
